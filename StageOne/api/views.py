@@ -14,9 +14,8 @@ def endpoint1(request):
     current_day = datetime.datetime.now().strftime('%A')
     current_utc_time = timezone.now().strftime('%Y-%m-%dT%H:%M:%SZ')
 
-    github_file_url = "https://github.com/username/repo/blob/main/file_name.ext"  # Replace with your actual GitHub file URL
-    github_repo_url = "https://github.com/username/repo"  # Replace with your actual GitHub repo URL
-
+    github_file_url = "https://github.com/JoelInyang/HNG/blob/main/StageOne/api/views.py" 
+    github_repo_url = "https://github.com/JoelInyang/HNG" 
     response_data = {
         "slack_name": slack_name,
         "current_day": current_day,
